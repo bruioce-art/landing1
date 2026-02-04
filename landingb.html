@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="landingb.css" />
+</head>
+<body>
+  <div class="background-stripes"></div>
+  
+<nav class="navbar">
+<div class="nav-container">
+<div class="logo">
+   <img src="logo3.png" alt="Logo MiMarca">
+</div>
+<ul class="nav-links">
+<li><a href="#tickets">Entradas</a></li>
+<li><a href="#merch">Merchandising</a></li>
+<li><a href="#faqs">FAQs</a></li>
+</ul>
+</div>
+</nav>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>DEFQON1</h1>
+      <p>HARDCORE WILL NEVER DIE!</p>
+      <a href="#" class="btn">ÚNETE</a>
+    </div>
+  </header>
+
+<section class="container" id="features">
+<h2 class="section-title">Bienvenido a DEFQON1</h2>
+
+
+<div class="about-box">
+<p>
+Descubre el festival de música electrónica más intenso del mundo. Defqon.1 es el lugar donde los amantes del hardstyle, hardcore y trance se reúnen cada verano para vivir una experiencia única. Con escenarios gigantescos, espectáculos de luces impresionantes y pirotecnia que corta la respiración, cada momento se siente como un viaje a otro universo. Más que un festival, es una comunidad global de fans que comparten la pasión por los ritmos más potentes y la energía sin límites. Prepárate para sumergirte en un evento que desafía todos los sentidos y deja recuerdos que duran para siempre.
+</p>
+</div>
+</section>
+
+<div class="carousel">
+<button class="arrow left" onclick="scrollCarousel(-1)">&#10094;</button>
+
+<div class="carousel-track" id="carouselTrack">
+<img src="carusel1.jpg" alt="Foto 1">
+<img src="carusel2.jpg" alt="Foto 2">
+<img src="carusel3.jpg" alt="Foto 3">
+<img src="carusel4.jpg" alt="Foto 4">
+<img src="carusel5.jpg" alt="Foto 5">
+<img src="carusel6.jpg" alt="Foto 6">
+<img src="carusel7.jpg" alt="Foto 7">
+</div>
+<button class="arrow right" onclick="scrollCarousel(1)">&#10095;</button>
+</div>
+
+<section class="tickets" id="tickets">
+  <h2 class="section-title">Comprar Entradas</h2>
+  <div class="ticket-container">
+
+    <div class="ticket lowcost">
+      <h3>Pobre</h3>
+      <p class="price">$50</p>
+      <ul>
+        <li>Acceso al festival</li>
+        <li>Área general</li>
+        <li>1 bebida incluida</li>
+      </ul>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+
+    <div class="ticket normal">
+      <h3>Normal</h3>
+      <p class="price">$100</p>
+      <ul>
+        <li>Acceso al festival</li>
+        <li>Área preferente</li>
+        <li>3 bebidas incluidas</li>
+        <li>Merchandising oficial</li>
+      </ul>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+
+    <div class="ticket premium">
+      <h3>Premium</h3>
+      <p class="price">$200</p>
+      <ul>
+        <li>Acceso al festival VIP</li>
+        <li>Área VIP cercana al escenario</li>
+        <li>Bebidas ilimitadas</li>
+        <li>Merchandising exclusivo</li>
+        <li>Meet & Greet con artistas</li>
+      </ul>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="image-break">
+  <!-- no necesita contenido -->
+</section>
+
+<section class="merch" id="merch">
+  <h2 class="section-title">Merchandising</h2>
+
+  <div class="merch-grid">
+    <div class="merch-item">
+      <img src="merch1.webp" alt="Camisetas">
+      <span>Camisetas</span>
+    </div>
+
+    <div class="merch-item">
+      <img src="merch3.webp" alt="Gorras">
+      <span>Gorras</span>
+    </div>
+
+    <div class="merch-item">
+      <img src="merch4.webp" alt="Pantalones">
+      <span>Pantalones</span>
+    </div>
+
+    <div class="merch-item">
+      <img src="merch5.webp" alt="Accesorios">
+      <span>Accesorios</span>
+    </div>
+  </div>
+</section>
+
+<section class="faqs" id="faqs">
+  <h2 class="section-title">Preguntas frecuentes</h2>
+
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary>¿Dónde se celebra el festival?</summary>
+      <p>El festival se celebra al aire libre en un recinto especialmente preparado con varias zonas y escenarios.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Se puede entrar con comida o bebida?</summary>
+      <p>No está permitido acceder con comida o bebida del exterior, pero habrá food trucks y barras dentro del recinto.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Hay zona de acampada?</summary>
+      <p>Sí, contamos con una zona de acampada equipada con baños, duchas y seguridad 24h.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Las entradas son reembolsables?</summary>
+      <p>Las entradas no son reembolsables, salvo cancelación del evento por parte de la organización.</p>
+    </details>
+  </div>
+</section>
+
+<section class="footer-image">
+  <!-- No necesita contenido -->
+</section>
+
+
+<div class="page-content">
+  <footer>
+    <p>© 2026 - Todos los derechos reservados porque mola mucho</p>
+  </footer>
+</div>
+  <script>
+const track = document.getElementById('carouselTrack');
+
+
+function scrollCarousel(direction) {
+const scrollAmount = 320; // ancho imagen + gap
+track.scrollLeft += direction * scrollAmount;
+}
+</script>
+
+</body>
+</html>
